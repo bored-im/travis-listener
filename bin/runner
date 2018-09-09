@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cp /config/travis.yml config/travis.yml
+
+bundle exec rackup -s puma -p 4000 config.ru
